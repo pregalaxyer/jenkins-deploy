@@ -716,6 +716,7 @@ export class JenkinsService {
       let url = `${this.fromUrlFormat(job.url)}/${buildNumber}/doDelete`;
       await request.post(url);
     } catch (err) {
+      // @ts-ignore
       if (302 === err.statusCode) {
         return `${job.fullName} #${buildNumber} deleted`;
       }
@@ -798,6 +799,7 @@ export class JenkinsService {
     } catch (err) {
       console.log(err);
       this.showCantConnectMessage();
+      // @ts-ignore
       return err.error;
     }
   }

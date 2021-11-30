@@ -134,10 +134,10 @@ export class PipelineJack extends JackBase {
                 await ext.connectionsManager.host.client.job.create(jobName, xml);
                 this.showInformationMessage(`Pipeline "${jobName}" created on "${ext.connectionsManager.activeConnection.name}"`);
                 // ext.pipelineTree.refresh();
-            } catch (ex) {
-                console.log(ex.message);
-                this.showWarningMessage(ex.message);
-                throw ex;
+            } catch (err) {
+                console.log((err as Error).message);
+                this.showWarningMessage((err as Error).message);
+                throw err;
             }
         }
 
@@ -332,10 +332,10 @@ export class PipelineJack extends JackBase {
         // Create the job on da Jenkles!
         try {
             await ext.connectionsManager.host.client.job.create(fullJobName, xml);
-        } catch (ex) {
-            console.log(ex.message);
-            this.showWarningMessage(ex.message);
-            throw ex;
+        } catch (err) {
+            console.log((err as Error).message);
+            this.showWarningMessage((err as Error).message);
+            throw err;
         }
 
         return await ext.connectionsManager.host.getJob(fullJobName);
@@ -534,7 +534,7 @@ export class PipelineJack extends JackBase {
                         config.save();
                     }
                 } catch (err) {
-                    this.showWarningMessage(err.message);
+                    this.showWarningMessage((err as Error).message);
                     return undefined;
                 }
             }
@@ -596,7 +596,7 @@ export class PipelineJack extends JackBase {
         try {
             fs.writeFileSync(filepath, source, 'utf-8');
         } catch (err) {
-            vscode.window.showInformationMessage(err);
+            vscode.window.showInformationMessage((err as Error).message);
             return;
         }
 
