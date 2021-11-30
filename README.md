@@ -1,4 +1,4 @@
-![logo](images/logo.png)
+![logo](images/deploy.png)
 
 # Jenkins Deploy
 
@@ -47,4 +47,4 @@ code --install-extension .\jenkins-deploy-0.0.1.vsix # ...or whatever version wa
 
 ## Support
 
-如在使用过程中遇到什么 bug 或者想要有趣的功能可在这里提出 [issue tracker](https://github.com/luoqiang0831/jenkins-deploy/issues).
+如在使用过程中遇到什么 bug 或者想要有趣的功能可在这里提出 [issue tracker](https://github.com/pregalaxyer/jenkins-deploy/issues).

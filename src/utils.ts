@@ -135,7 +135,7 @@ export function readjson(path: string): any {
   try {
     json = JSON.parse(raw);
   } catch (err) {
-    err.message = `Could not parse parameter JSON from ${path}`;
+    (err as Error).message = `Could not parse parameter JSON from ${path}`;
     throw err;
   }
   return json;
@@ -151,7 +151,7 @@ export function writejson(path: string, json: any) {
     let jsonString = JSON.stringify(json, null, 4);
     fs.writeFileSync(path, jsonString, "utf8");
   } catch (err) {
-    err.message = `Could not write parameter JSON to ${path}`;
+    (err as Error).message = `Could not write parameter JSON to ${path}`;
     throw err;
   }
 }

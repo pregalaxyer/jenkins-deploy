@@ -1,10 +1,10 @@
 {
-  "publisher": "luoqiang0831",
+  "publisher": "pregalaxyer",
   "name": "jenkins-deploy",
   "displayName": "Jenkins deploy",
-  "description": "为公司定制开发的Jenkins 发布流程，简化Jenkins管理和发布让开发者在不打断编码的同时支持项目编译发布，本项目借鉴与Jenkins Jack",
+  "description": "Jenkins 发布流程，简化Jenkins管理和发布让开发者在不打断编码的同时支持项目编译发布，本项目借鉴与Jenkins Jack",
   "icon": "images/logo.png",
-  "homepage": "https://github.com/luoqiang0831/jenkins-deploy/master/README.md",
+  "homepage": "https://github.com/pregalaxyer/jenkins-deploy/master/README.md",
   "version": "1.1.0",
   "license": "See LICENSE.md",
   "galleryBanner": {
@@ -23,10 +23,10 @@
   "main": "./out/extension.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/luoqiang0831/jenkins-deploy.git"
+    "url": "https://github.com/pregalaxyer/jenkins-deploy.git"
   },
   "bugs": {
-    "url": "https://github.com/luoqiang0831/jenkins-deploy/issues"
+    "url": "https://github.com/pregalaxyer/jenkins-deploy/issues"
   },
   "contributes": {
     "viewsContainers": {
