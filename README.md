@@ -24,7 +24,7 @@ Jack 进入您的 Jenkins，以简化您的管道开发和 Jenkins 管理。使�
 
 ## Setup
 
-See [TUTORIAL.md](TUTORIAL.md##setting-up-a-connection) for setup and basic usage.
+See [COMMANDS.md](COMMANDS.md) for setup and basic usage.
 
 ## Quick-use
 
